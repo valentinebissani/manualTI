@@ -1,11 +1,17 @@
 body{
-    background-color: white;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
 }
-header{
-    color: white;
-    background: linear-gradient(to bottom, #6783e0, #9c6dd4); 
-    text-align: center;
-    padding: 5vh;
+.header-card{
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2vh;
 }
 .card{
     margin-top: 5vh;
@@ -59,4 +65,5 @@ footer{
     left: 0;
     height: 8px;
     background: linear-gradient(to bottom, #6e8efb, #917fe9)
+
 }
