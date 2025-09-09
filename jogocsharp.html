@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo – C#</title>
+  <link rel="stylesheet" href="stylejogos.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz de C#</h1>
+  </header>
+
+  <div class="container">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1) Qual palavra-chave define uma variável inteira?</p>
+        <label><input type="radio" name="q1" value="int"> int</label><br>
+        <label><input type="radio" name="q1" value="string"> string</label><br>
+        <label><input type="radio" name="q1" value="var"> var</label>
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual comando escreve no console?</p>
+        <label><input type="radio" name="q2" value="console.writeline"> Console.WriteLine</label><br>
+        <label><input type="radio" name="q2" value="printf"> printf</label><br>
+        <label><input type="radio" name="q2" value="cout"> cout</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3) Qual é a função principal que inicia o programa?</p>
+        <input type="text" name="q3">
+      </div>
+
+      <div class="pergunta">
+        <p>4) Qual símbolo é usado para comentários de uma linha?</p>
+        <input type="text" name="q4">
+      </div>
+
+      <div class="pergunta">
+        <p>5) Qual palavra cria um novo objeto?</p>
+        <input type="text" name="q5">
+      </div>
+
+      <div class="pergunta">
+        <p>6) Qual operador compara igualdade?</p>
+        <input type="text" name="q6">
+      </div>
+
+      <div class="pergunta">
+        <p>7) Complete: em C#, as strings são escritas entre _____</p>
+        <input type="text" name="q7">
+      </div>
+
+      <div class="pergunta">
+        <p>8) Qual estrutura repete enquanto a condição for verdadeira?</p>
+        <input type="text" name="q8">
+      </div>
+
+      <div class="pergunta">
+        <p>9) Qual palavra-chave define uma classe?</p>
+        <input type="text" name="q9">
+      </div>
+
+      <div class="pergunta">
+        <p>10) Complete: para imprimir no console usamos Console._____</p>
+        <input type="text" name="q10">
+      </div>
+
+      <button type="submit">Verificar</button>
+    <a href="pagjogos.html" class="voltar-btn">Voltar</a>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <footer>
+    <p>Quiz de C#</p>
+  </footer>
+
+  <script src="jogoCsharp.js"></script>
+</body>
+</html>

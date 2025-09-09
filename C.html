@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Master - Aprenda Linguagens de Programação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="linguagens.css">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <header>
+        <h1>Manual de TI</h1>
+        <h5>O guia definitivo para aprender as linguagens de programação</h5>
+    </header>
+
+     <div class="container">
+        <h2 class="text-center mt-5">Tutorial de Linguagem C</h2>
+        <div class="card">
+            <div class="card-body">
+            <div>
+                <h3>O que é Linguagem C?</h3>
+                <p>C é uma linguagem de programação estruturada, criada por Dennis Ritchie em 1972 nos laboratórios Bell. É amplamente usada para:</p>
+                <ul>
+                    <li>Desenvolvimento de sistemas operacionais</li>
+                    <li>Programação de microcontroladores</li>
+                    <li>Desenvolvimento de drivers</li>
+                    <li>Sistemas embarcados</li>
+                    <li>Núcleo de outras linguagens</li>
+                </ul>
+                  <h3>Estrutura Básica de um Programa C</h3>
+                <pre class="bg-light p-3">
+                <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    // Seu código aqui
+    printf("Olá, Mundo!\n");
+    return 0;
+}</code>
+</pre>
+    <p>Explicação:</p>
+                <ul>
+                    <li><code>#include &lt;stdio.h&gt;</code> - Inclui a biblioteca padrão de entrada/saída</li>
+                    <li><code>int main()</code> - Função principal onde a execução começa</li>
+                    <li><code>printf()</code> - Função para imprimir na tela</li>
+                    <li><code>return 0</code> - Indica que o programa terminou com sucesso</li>
+                    <li><code>//</code> - Comentário de uma linha</li>
+                </ul>
+                <h3>Tipos de Dados Básicos</h3>
+                <table class="table table-bordered">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                              <td><code>int</code></td>
+                            <td>Números inteiros (normalmente 4 bytes)</td>
+                        </tr>
+                        <tr>
+                            <td><code>float</code></td>
+                            <td>Números decimais (4 bytes)</td>
+                        </tr>
+                        <tr>
+                            <td><code>double</code></td>
+                            <td>Números decimais com maior precisão (8 bytes)</td>
+                        </tr>
+                        <tr>
+                             <td><code>char</code></td>
+                            <td>Um único caractere (1 byte)</td>
+                        </tr>
+                        <tr>
+                            <td><code>void</code></td>
+                            <td>Tipo vazio (usado em funções sem retorno)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 <h3>Variáveis e Constantes</h3>
+                <p>Declaração de variáveis:</p>
+                <pre class="bg-light p-3"><code>int idade = 25;
+float altura = 1.75f;
+char inicial = 'J';
+int programador = 1; // 1 para true, 0 para false</code></pre>
+
+                <p>Constantes (valores que não mudam):</p>
+                <pre class="bg-light p-3"><code>#define PI 3.14159
+const int DIAS_SEMANA = 7;</code></pre>
+                <h3>Operadores</h3>
+                <h4>Operadores Aritméticos</h4>
+                <ul>
+                    <li><code>+</code> Adição</li>
+                    <li><code>-</code> Subtração</li>
+                    <li><code>*</code> Multiplicação</li>
+                    <li><code>/</code> Divisão</li>
+                    <li><code>%</code> Módulo (resto da divisão)</li>
+                </ul>
+                <h4>Operadores de Comparação</h4>
+                <ul>
+                    <li><code>==</code> Igual a</li>
+                    <li><code>!=</code> Diferente de</li>
+                    <li><code>&gt;</code> Maior que</li>
+                    <li><code>&lt;</code> Menor que</li>
+                    <li><code>&gt;=</code> Maior ou igual a</li>
+                    <li><code>&lt;=</code> Menor ou igual a</li>
+                </ul>
+                <h4>Condicionais</h4>
+                <p>if-else:</p>
+                <pre class="bg-light p-3"><code>if (idade >= 18) {
+    printf("Maior de idade\n");
+} else {
+    printf("Menor de idade\n");
+}</code></pre>
+<p>switch-case:</p>
+                <pre class="bg-light p-3"><code>switch(dia) {
+    case 1: printf("Domingo\n"); break;
+    case 2: printf("Segunda\n"); break;
+    // ...
+    default: printf("Dia inválido\n");
+}</code></pre>
+
+                <h4>Loops</h4>
+                <p>for:</p>
+                <pre class="bg-light p-3"><code>for(int i = 0; i < 10; i++) {
+    printf("%d\n", i);
+}</code></pre>
+
+                <p>while:</p>
+                <pre class="bg-light p-3"><code>int i = 0;
+while(i < 10) {
+    printf("%d\n", i);
+    i++;
+}</code></pre>
+ <p>do-while:</p>
+                <pre class="bg-light p-3"><code>int i = 0;
+do {
+    printf("%d\n", i);
+    i++;
+} while(i < 10);</code></pre>
+
+                <h3>Funções</h3>
+                <p>Funções permitem organizar e reutilizar código:</p>
+                <pre class="bg-light p-3"><code>// Declaração
+int soma(int a, int b) {
+    return a + b;
+}
+
+// Chamada
+int resultado = soma(5, 3);
+printf("5 + 3 = %d\n", resultado);</code></pre>
+  <h3>Arrays (Vetores)</h3>
+                <p>Armazenam múltiplos valores do mesmo tipo:</p>
+                <pre class="bg-light p-3"><code>int numeros[5] = {10, 20, 30, 40, 50};
+
+// Acessando elementos
+printf("%d\n", numeros[0]); // Primeiro elemento (10)
+
+// Alterando valores
+numeros[1] = 25;</code></pre>
+
+                <h3>Ponteiros</h3>
+                <p>Um dos conceitos mais importantes em C:</p>
+                <pre class="bg-light p-3"><code>int var = 10;
+int *ptr = &var; // ptr armazena o endereço de var
+
+printf("Valor: %d\n", *ptr); // Acessa o valor através do ponteiro
+*ptr = 20; // Modifica o valor através do ponteiro</code></pre>
+ <h3>Próximos Passos</h3>
+                <p>Para continuar aprendendo C:</p>
+                <ol>
+                    <li>Pratique com exercícios simples</li>
+                    <li>Domine o uso de ponteiros</li>
+                    <li>Aprenda sobre alocação dinâmica de memória</li>
+                    <li>Estude estruturas (struct)</li>
+                    <li>Explore manipulação de arquivos</li>
+                </ol>
+                <p>Recursos recomendados:</p>
+                <ul>
+                    <li><a href="https://www.learn-c.org/" target="_blank">Learn C</a> - Tutorial interativo</li>
+                    <li><a href="https://www.cplusplus.com/reference/clibrary/" target="_blank">Referência da Biblioteca C</a></li>
+                    <li>Livro: "Linguagem C - Luis Damas" (Padrão ANSI)</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 - Central de TI</p>
+        <p>Versão 2.0</p>
+</body>
+</html>

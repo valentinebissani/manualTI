@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz – SQL/MySQL/Banco de Dados</title>
+  <link rel="stylesheet" href="stylejogos.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz de SQL/MySQL/Banco de Dados</h1>
+  </header>
+
+  <div class="container">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1) Qual comando seleciona dados de uma tabela?</p>
+        <input type="text" name="q1">
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual cláusula filtra resultados?</p>
+        <label><input type="radio" name="q2" value="where"> WHERE</label><br>
+        <label><input type="radio" name="q2" value="order by"> ORDER BY</label><br>
+        <label><input type="radio" name="q2" value="join"> JOIN</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3) Complete o comando para ordenar os resultados:</p>
+        <input type="text" name="q3">
+      </div>
+
+      <div class="pergunta">
+        <p>4) Qual comando adiciona dados em uma tabela?</p>
+        <label><input type="radio" name="q4" value="insert"> INSERT</label><br>
+        <label><input type="radio" name="q4" value="update"> UPDATE</label><br>
+        <label><input type="radio" name="q4" value="delete"> DELETE</label>
+      </div>
+
+      <div class="pergunta">
+        <p>5) Qual comando altera dados existentes?</p>
+        <input type="text" name="q5">
+      </div>
+
+      <div class="pergunta">
+        <p>6) Qual comando remove dados de uma tabela?</p>
+        <input type="text" name="q6">
+      </div>
+
+      <div class="pergunta">
+        <p>7) Como criar um banco de dados?</p>
+        <input type="text" name="q7">
+      </div>
+
+      <div class="pergunta">
+        <p>8) Qual comando cria uma tabela?</p>
+        <label><input type="radio" name="q8" value="create table"> CREATE TABLE</label><br>
+        <label><input type="radio" name="q8" value="create database"> CREATE DATABASE</label><br>
+        <label><input type="radio" name="q8" value="insert"> INSERT</label>
+      </div>
+
+      <div class="pergunta">
+        <p>9) Complete para definir chave primária:</p>
+        <input type="text" name="q9">
+      </div>
+
+      <div class="pergunta">
+        <p>10) Qual comando adiciona coluna?</p>
+        <input type="text" name="q10">
+      </div>
+
+      <div class="pergunta">
+        <p>11) Complete: remover coluna usa _____</p>
+        <input type="text" name="q11">
+      </div>
+
+      <div class="pergunta">
+        <p>12) Qual comando define tipo de dados de uma coluna?</p>
+        <label><input type="radio" name="q12" value="datatype"> DATATYPE</label><br>
+        <label><input type="radio" name="q12" value="constraint"> CONSTRAINT</label><br>
+        <label><input type="radio" name="q12" value="primary key"> PRIMARY KEY</label>
+      </div>
+
+      <div class="pergunta">
+        <p>13) Qual é o modelo de dados mais comum?</p>
+        <input type="text" name="q13">
+      </div>
+
+      <div class="pergunta">
+        <p>14) O que é chave estrangeira?</p>
+        <label><input type="radio" name="q14" value="foreign key"> FOREIGN KEY</label><br>
+        <label><input type="radio" name="q14" value="primary key"> PRIMARY KEY</label><br>
+        <label><input type="radio" name="q14" value="unique"> UNIQUE</label>
+      </div>
+
+      <div class="pergunta">
+        <p>15) Complete: processo que evita redundância é _____</p>
+        <input type="text" name="q15">
+      </div>
+
+      <div class="pergunta">
+        <p>16) Transações usam qual comando?</p>
+        <input type="text" name="q16">
+      </div>
+
+      <div class="pergunta">
+        <p>17) Qual comando cria índice?</p>
+        <input type="text" name="q17">
+      </div>
+
+      <div class="pergunta">
+        <p>18) Complete: remover índice usa _____</p>
+        <input type="text" name="q18">
+      </div>
+
+      <button type="submit">Verificar</button>
+    <a href="pagjogos.html" class="voltar-btn">Voltar</a>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <footer>
+    <p>Quiz de SQL/MySQL/Banco de Dados</p>
+  </footer>
+
+  <script src="jogobancodados.js"></script>
+</body>
+</html>

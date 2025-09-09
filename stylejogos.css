@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f3f5f8, #9c6dd4);
+  color: #1f1f1f;
+}
+
+header {
+  background: linear-gradient(to bottom, #4161c9, #a76af1);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #e8eaf6;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.pergunta {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #6e8efb;
+}
+
+button {
+  background: linear-gradient(to bottom, #6e8efb, #917fe9);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #5a75e0, #7e64d9);
+}
+
+#resultado {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #bbdefb;
+  border-radius: 10px;
+}
+
+.voltar-btn {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom, #6e8efb, #917fe9);
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(to bottom, #5a75e0, #7e64d9);
+}
