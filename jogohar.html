@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Monte seu PC - Jogo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .pecas {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .peca {
+      width: 100px;
+      height: 100px;
+      border: 2px dashed #333;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      cursor: grab;
+      font-weight: bold;
+    }
+    .gabinete {
+      width: 450px;
+      height: 300px;
+      border: 3px solid #444;
+      margin: 30px auto;
+      border-radius: 15px;
+      background: #ddd;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+    }
+    .slot {
+      border: 2px dashed #555;
+      border-radius: 10px;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #666;
+    }
+    .slot.over {
+      background: #b3ffb3;
+    }
+    #mensagem {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Monte seu PC 🖥️</h1>
+  <p>Arraste cada peça para o local correto dentro do gabinete.</p>
+
+  <div class="pecas">
+    <div class="peca" draggable="true" id="cpu">CPU</div>
+    <div class="peca" draggable="true" id="ram">RAM</div>
+    <div class="peca" draggable="true" id="gpu">GPU</div>
+    <div class="peca" draggable="true" id="hd">HD/SSD</div>
+  </div>
+
+  <div class="gabinete">
+    <div class="slot" data-peca="cpu"></div>
+    <div class="slot" data-peca="ram"></div>
+    <div class="slot" data-peca="gpu"></div>
+    <div class="slot" data-peca="hd"></div>
+  </div>
+
+  <div id="mensagem">🎉 Parabéns, você montou o PC corretamente! 🎉</div>
+
+  <script>
+    const pecas = document.querySelectorAll('.peca');
+    const slots = document.querySelectorAll('.slot');
+    const mensagem = document.getElementById('mensagem');
+    let pecasCorretas = 0;
+
+    pecas.forEach(peca => {
+      peca.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('text/plain', peca.id);
+      });
+    });
+
+    slots.forEach(slot => {
+      slot.addEventListener('dragover', e => {
+        e.preventDefault();
+        slot.classList.add('over');
+      });
+
+      slot.addEventListener('dragleave', () => {
+        slot.classList.remove('over');
+      });
+
+      slot.addEventListener('drop', e => {
+        e.preventDefault();
+        slot.classList.remove('over');
+
+        const id = e.dataTransfer.getData('text/plain');
+        const peca = document.getElementById(id);
+
+        // Verifica se a peça está no slot certo
+        if (slot.dataset.peca === id) {
+          slot.innerHTML = "";
+          slot.appendChild(peca);
+          peca.setAttribute("draggable", "false"); // não arrasta mais
+          pecasCorretas++;
+
+          if (pecasCorretas === pecas.length) {
+            mensagem.style.display = "block";
+          }
+        } else {
+          alert("❌ Essa peça não pertence aqui!");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

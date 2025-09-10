@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo – C</title>
+  <link rel="stylesheet" href="stylejogos.css">
+</head>
+<body class="alterar">
+  <div class="container">
+
+    <div class="header-card">
+    <h1>Quiz de C</h1>
+      <button class="btn" onclick="modoEscuro()" id="textmode">Modo escuro</button>
+    </div>
+
+  <div class="container alterar2">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1) Qual é a extensão padrão de arquivos C?</p>
+        <label><input type="radio" name="q1" value=".c"> .c</label><br>
+        <label><input type="radio" name="q1" value=".cpp"> .cpp</label><br>
+        <label><input type="radio" name="q1" value=".h"> .h</label>
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual função imprime na tela?</p>
+        <input type="text" name="q2">
+      </div>
+
+      <div class="pergunta">
+        <p>3) Qual a função principal que retorna int?</p>
+        <input type="text" name="q3">
+      </div>
+
+      <div class="pergunta">
+        <p>4) Como declarar um ponteiro?</p>
+        <input type="text" name="q4">
+      </div>
+
+      <div class="pergunta">
+        <p>5) Complete: operador de atribuição</p>
+        <input type="text" name="q5">
+      </div>
+
+      <div class="pergunta">
+        <p>6) Qual operador compara igualdade?</p>
+        <input type="text" name="q6">
+      </div>
+
+      <div class="pergunta">
+        <p>7) Como acessar o endereço de uma variável?</p>
+        <input type="text" name="q7">
+      </div>
+
+      <div class="pergunta">
+        <p>8) Qual operador retorna o tamanho da variável?</p>
+        <input type="text" name="q8">
+      </div>
+
+      <div class="pergunta">
+        <p>9) Qual palavra-chave cria um laço?</p>
+        <input type="text" name="q9">
+      </div>
+
+      <div class="pergunta">
+        <p>10) Complete: comentário de linha única</p>
+        <input type="text" name="q10">
+      </div>
+
+      <button type="submit">Verificar</button>
+    <a href="pagjogos.html" class="voltar-btn">Voltar</a>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  </div>
+  <footer>
+    <p>Quiz de C</p>
+  </footer>
+
+  <script src="jogoC.js"></script>
+</body>
+</html>
+
+

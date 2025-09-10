@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo – Hardware</title>
+  <link rel="stylesheet" href="stylejogos.css">
+</head>
+<body class="alterar">
+  <div class="container">
+
+  <div class="header-card">
+    <h1>Quiz de Hardware</h1>
+    <button class="btn" onclick="modoEscuro()" id="textmode">Modo escuro</button>
+  </div>
+
+  <div class="container alterar2">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1) Qual é a principal função da memória RAM?</p>
+        <label><input type="radio" name="q1" value="armazenamento temporário"> Armazenamento temporário</label><br>
+        <label><input type="radio" name="q1" value="armazenamento permanente"> Armazenamento permanente</label><br>
+        <label><input type="radio" name="q1" value="processar gráficos"> Processar gráficos</label>
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual dispositivo é geralmente mais rápido para armazenamento?</p>
+        <label><input type="radio" name="q2" value="ssd"> SSD</label><br>
+        <label><input type="radio" name="q2" value="hd"> HD</label><br>
+        <label><input type="radio" name="q2" value="dvd"> DVD</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3) O que significa GPU?</p>
+        <input type="text" name="q3" >
+      </div>
+
+      <div class="pergunta">
+        <p>4) Qual é a função principal da placa-mãe?</p>
+        <input type="text" name="q4" >
+      </div>
+
+      <div class="pergunta">
+        <p>5) Qual é um dispositivo de armazenamento permanente?</p>
+        <label><input type="radio" name="q5" value="hd"> HD</label><br>
+        <label><input type="radio" name="q5" value="ram"> RAM</label><br>
+        <label><input type="radio" name="q5" value="cache"> Cache</label>
+      </div>
+
+      <div class="pergunta">
+        <p>6) Qual componente ajuda a resfriar o processador?</p>
+        <label><input type="radio" name="q6" value="cooler"> Cooler</label><br>
+        <label><input type="radio" name="q6" value="placa de vídeo"> Placa de vídeo</label><br>
+        <label><input type="radio" name="q6" value="ssd"> SSD</label>
+      </div>
+
+      <div class="pergunta">
+        <p>7) Qual componente fornece energia para o computador?</p>
+        <input type="text" name="q7">
+      </div>
+
+      <div class="pergunta">
+        <p>8) Qual é o nome do slot comum para placas de vídeo modernas?</p>
+        <input type="text" name="q8">
+      </div>
+
+      <div class="pergunta">
+        <p>9) Que componente na placa-mãe guarda as configurações mesmo sem energia?</p>
+        <input type="text" name="q9">
+      </div>
+
+      <div class="pergunta">
+        <p>10) Complete: SATA significa _____ ATA.</p>
+        <input type="text" name="q10">
+      </div>
+
+      <button type="submit">Verificar</button>
+    <a href="pagjogos.html" class="voltar-btn">Voltar</a>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  </div>
+  <footer>
+    <p>Quiz de Hardware</p>
+  </footer>
+
+  <script src="jogoHardware.js"></script>
+</body>
+</html>
+
+
