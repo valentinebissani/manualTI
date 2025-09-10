@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo – Java</title>
+  <link rel="stylesheet" href="stylejogos.css">
+</head>
+<body>
+  <div class="container">
+
+  <div class="header-card">
+     <h1>Quiz de Java</h1>
+      <button class="btn" onclick="modoEscuro()" id="textmode">Modo escuro</button>
+  </div>
+
+
+  <div class="container">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1) Qual é a função principal que inicia o programa?</p>
+        <input type="text" name="q1">
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual comando imprime algo no console?</p>
+        <label><input type="radio" name="q2" value="system.out.println"> System.out.println</label><br>
+        <label><input type="radio" name="q2" value="print"> print</label><br>
+        <label><input type="radio" name="q2" value="echo"> echo</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3) Qual palavra-chave define uma classe?</p>
+        <input type="text" name="q3">
+      </div>
+
+      <div class="pergunta">
+        <p>4) Qual tipo de dado representa texto?</p>
+        <input type="text" name="q4">
+      </div>
+
+      <div class="pergunta">
+        <p>5) Qual operador compara igualdade?</p>
+        <input type="text" name="q5">
+      </div>
+
+      <div class="pergunta">
+        <p>6) Qual palavra-chave cria um novo objeto?</p>
+        <input type="text" name="q6">
+      </div>
+
+      <div class="pergunta">
+        <p>7) Complete: Laço que se repete enquanto a condição for verdadeira</p>
+        <input type="text" name="q7">
+      </div>
+
+      <div class="pergunta">
+        <p>8) Qual comando lê do teclado?</p>
+        <input type="text" name="q8">
+      </div>
+
+      <div class="pergunta">
+        <p>9) Qual símbolo indica comentário de linha?</p>
+        <input type="text" name="q9">
+      </div>
+
+      <div class="pergunta">
+        <p>10) Complete: Java é orientado a _____</p>
+        <input type="text" name="q10">
+      </div>
+
+      <button type="submit">Verificar</button>
+    <a href="pagjogos.html" class="voltar-btn">Voltar</a>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  </div>
+  <footer>
+    <p>Quiz de Java</p>
+  </footer>
+
+  <script src="jogojava.js"></script>
+</body>
+</html>
