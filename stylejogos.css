@@ -5,11 +5,15 @@ body {
   color: #1f1f1f;
 }
 
-header {
-  background: linear-gradient(to bottom, #4161c9, #a76af1);
+.header-card{
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
   color: white;
-  padding: 20px;
   text-align: center;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2vh;
 }
 
 .container {
@@ -67,3 +71,18 @@ button:hover {
 .voltar-btn:hover {
   background: linear-gradient(to bottom, #5a75e0, #7e64d9);
 }
+
+
+.claro{
+  background-color: white;
+  color: black;
+}
+.escuro{
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+.escuro2{
+  background-color: #3d3d3d;
+  color: #f8f9fa;
+}
+
