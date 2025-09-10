@@ -61,4 +61,17 @@ footer{
     background: linear-gradient(to bottom, #6e8efb, #917fe9)
 
 }
+.claro{
+  background-color: white;
+  color: black;
+}
+.escuro{
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+.escuro2{
+  background-color: #3d3d3d;
+  color: #f8f9fa;
+}
+
 
